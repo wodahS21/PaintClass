@@ -38,6 +38,7 @@
             this.txtB = new System.Windows.Forms.TextBox();
             this.B = new System.Windows.Forms.Label();
             this.txtPapel = new System.Windows.Forms.PictureBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
@@ -132,11 +133,22 @@
             this.txtPapel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.txtPapel_MouseMove);
             this.txtPapel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.txtPapel_MouseUp);
             // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(17, 223);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.btnGuardar.TabIndex = 10;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.txtPapel);
             this.Controls.Add(this.txtB);
             this.Controls.Add(this.B);
@@ -170,5 +182,6 @@
         private TextBox txtB;
         private Label B;
         private PictureBox txtPapel;
+        private Button btnGuardar;
     }
 }

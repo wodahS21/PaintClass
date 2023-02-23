@@ -47,6 +47,15 @@ namespace PaintClass
             moving = false;
         }
 
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog Guardar = new SaveFileDialog();
+            Guardar.Filter = "JPEG(*.JPG)|*.JPG|BMP(*.BMP)|*.BMP";
+            Image Imagen = txtPapel.BackgroundImage;
+            Guardar.ShowDialog();
+            Imagen.Save(Guardar.FileName);
+        }
+
         private void cambiarValorPluma()
         {
             pen = new Pen(Color.Black, anchoPluma);
